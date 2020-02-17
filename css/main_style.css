@@ -1,0 +1,120 @@
+body, html
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body
+{
+    margin: 0;
+    padding :0;
+    /* font-family: 'Soul 스케치'; */
+    font-family: '나눔스퀘어_ac', sans-serif;
+}
+
+.grid-wapper
+{
+    height: 100%;
+    display: block;
+    background:
+    linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
+    linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+    linear-gradient(transparent 3px, #fafcfd 3px, #fafcfd 78px, transparent 78px),
+    linear-gradient(-90deg, lightgray 1px, transparent 1px),
+    linear-gradient(-90deg, transparent 3px, #fafcfd 3px, #fafcfd 78px, transparent 78px),
+    linear-gradient(lightgray 1px, transparent 1px),
+    #f2f2f2;
+    background-size:
+        8px 8px,
+        8px 8px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px;
+
+    /* background: #fafcfd; */
+    /* background-image: radial-gradient(rgba(24,24,24,.7) 5%, transparent 0);
+    background-size: 30px 30px; */
+}
+
+.custom-select
+{
+    /* position: absolute;
+    top: 0;
+    left: 130px;  
+    margin: 0px 0 0 8px;
+    padding: 10px; */
+}
+
+.textarea
+{
+    position: relative;
+    top: 10%;
+    width:100%;
+    height:100%;
+}
+
+
+#font_box
+{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.contents-wrapper
+{
+    height: 100%;
+}
+
+.contents
+{
+    padding: 0px 24px;
+    height: 100%;
+}
+
+
+.description_wrapper
+{
+    /* display:none; */
+    position: relative;
+    top: 5%;
+    padding: 15px 0px;
+    width: 100%;
+    margin: 30px auto;
+    word-wrap: break-word;
+    /* border: 2px solid gray; */
+    transition: .2s;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#font_description
+{
+    padding-top: 20px;
+    font-size: 0.9rem;
+    margin: 0px 15px;
+    line-height: 25px;
+    /* color:gray; */
+}
+
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    font-family: '나눔스퀘어_ac', sans-serif;
+}
+
+.footer p
+{
+    font-size: 0.8em;
+}

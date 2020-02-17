@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta setting -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- User-defined style sheet setting -->
+    <!-- <link rel="stylesheet" href="./css/main_font.css"> -->
+    <link rel="stylesheet" href="./css/main_style.css">
+    <link rel="stylesheet" href="./css/header_style.css">
+    <link rel="stylesheet" href="./css/main_menu_option.css">
+    <link rel="stylesheet" href="./css/main_font_slider.css">
+    <link rel="stylesheet" href="./css/font_input_container.css">
+
+    <!-- UI & ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Ace Editor cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.7/ace.js"></script>
+
+    <title>Font test Site</title>
+
+</head>
+<body class = "grid-wapper" id = "font_selector">
+<div class="header">
+
+    <div class = "logo">
+        <span class="blind">글꼴 테스트</span>
+    </div>
+    <div class="custom-select" id = "font_selector" style="width:200px;">
+        <select>
+                <option value="0">나눔스퀘어_ac</option>
+                <option value="1">나눔스퀘어_ac</option>
+                <option value="2">리디바탕</option>
+                <option value="3">여기어때 잘난체</option>
+                <option value="4">예스체</option>
+                <option value="5">양진체</option>
+                <option value="6">CookieRun Black</option>
+                <option value="7">Nanum EomMaSaRang</option>
+                <option value="8">Nanum GangBuJangNimCe</option>
+                <option value="9">Nanum GaRamYeonGgoc</option>
+                <option value="10">Nanum GarMaesGeur</option>
+                <option value="11">Soul 스케치</option>
+                <option value="12">Soul 종달새 Detail</option>
+                <option value="13">Soul 타이틀</option>
+                <option value="14">Soul SaekdongBlack_M</option>
+        </select>
+    </div>
+
+
+    <!-- <label for="file-upload" class="custom-file-upload">
+        <i class="fa fa-cloud-upload"></i> Custom Upload
+    </label> -->
+
+    <span class="btn-file">
+        <i class="fa fa-cloud-upload"></i>  Browse...<input type="file" id="ui_nav_bar_btn" >
+    </span>
+
+
+    <!-- <input type = "file" id = "ui_nav_bar_btn" value = "Upload file"> -->
+    <!-- &nbsp;&nbsp;&nbsp;<span class="blind"><i class="fa fa-cog" style = "font-size: 24px;"></i>&nbsp;&nbsp;글꼴 설정</span> -->
+    <!-- </input> -->
+<!-- <span><i class="fa fa-floppy-o" style = "font-size: 16px;"></i>&nbsp;&nbsp;<font style = "font-size: 16px;">현재 글꼴 저장</font></span> -->
+
+</div>
+
+<div class="contents-wrapper">
+
+    <div class="contents">
+        <h1 style = "font-family: '나눔스퀘어_ac', sans-serif; font-size: 20px; z-index: 999; text-align: center; font-weight: lighter; font-size: 0.95em;">Last Updated @ 2019.12.16.</h1>
+        <div class="textarea" id = "font_box">
+            <textarea id="text_preview_placeholder" placeholder="여기를 누르고 글꼴을 직접 써보세요."  class = "test-text"></textarea>
+            <!-- <div class="text_preview_wrapper" style = " width: 100%; height: 110px; margin: 0 auto;"> -->
+                <!-- <input id="text_preview_placeholder" class = "test-text" style = "display:block;" placeholder="여기를 누르고 글꼴을 직접 써보세요." autocomplete="off"> -->
+                    <!-- <em class = "font-wrapper" style = "font-family: 'Nanum EomMaSaRang';">여기를 누르고 글꼴을 직접 써보세요.</em> -->
+                    <!-- <span class = "cursor">|</span> -->
+                <!-- </input> -->
+
+            <!-- <div id="text_preview_placeholder"></div> -->
+                
+             <!-- </div> -->
+             <div class="font_option_wrapper">
+                <!-- <div class = "option_close_btn"><font>❯</font></div> -->
+                <!-- <input type="text" id = "user_input"> -->
+                <div class="description_wrapper">
+                    <!-- <h3>Font Option Frame</h3> -->
+                    <!-- <font style = "font-weight: bold;">______</font><br><br><br> -->
+                    <p id = "font_description"><b>크기</b>: <span id="demo">44px</span> 
+                        <input type="range" min="12" max="72" value="14" class="slider" id="myRange"></p>
+                    <p id = "font_description"><b>글꼴</b>: <font id = "font_identifier">40px</font></p>
+                    <p><button id = "font_size_init_btn"onclick = Init()>크기 초기화</button></p>
+                    <div class="slidecontainer">
+                       
+                    </span>
+                    <br><br>
+                    <!-- <p style = "font-size: 0.95em;">* 작성한 내용은 이 문장 상단에 표시됩니다.</p>    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>폰트 테스트용 웹 페이지 @ 2019. 10. 13</p>
+</div>
+
+    <!-- User-defined Javascript setting -->
+    <!-- <script src="./js/main_input_func.js"></script> -->
+    <script src="./js/main_menu_func.js"></script>
+    <script src="./js/main_font_slider_func.js"></script>
+    <script src="./js/file_upload_func.js"></script>
+
+
+</body>
+</html>

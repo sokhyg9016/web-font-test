@@ -1,0 +1,139 @@
+.test-text
+{
+    line-height: 30px;
+    letter-spacing: -.7px;
+    word-wrap: break-word;
+}
+
+#text_preview_placeholder
+{
+    position: fixed;
+    margin: 0px auto;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 80px 120px 0px 120px;
+    font-family: "나눔스퀘어_ac";
+    font-size: 14px;
+    text-align: left;
+    caret-color: #3F3F3F;   
+    line-height: inherit;
+    resize: none;
+    box-shadow: 1px 1px 1px 0px #ccc;
+    z-index: 99;
+    overflow: auto;
+}
+
+#font_identifier, #demo
+{
+    background-color: #ddd;
+    padding: 2px 5px;
+}
+
+
+.option_close_btn
+{
+    position: relative;
+    top:80%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    padding: 15px;
+    /* border-radius: 50%; */
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: rgb(95, 95, 95); 
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#font_size_init_btn
+{
+    padding: 6px 10px;
+    background-color: rgba(0,0,0,0.0);
+    border: 1px solid rgb(95, 95, 95); 
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: "나눔스퀘어_ac";
+}
+
+#font_size_init_btn:hover
+{
+    color: #fff;
+    background: rgb(95, 95, 95);
+}
+
+.option_close_btn:hover
+{
+    background-color: rgb(95, 95, 95); 
+    color: #fff;
+    border: 2px solid rgba(0,0,0,0.0);
+}
+
+.option_close_btn font
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.font_option_wrapper
+{
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 20%;
+    height: 100%;
+    /* background-color: #fff; */
+    /* border-right: 1px solid #ccc; */
+    /* box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.3); */
+    /* z-index: 999; */
+}
+
+input:focus::-webkit-input-placeholder { color:transparent;}
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+textarea:focus, input:focus, button:focus
+{
+    outline: none;
+}
+
+#text_preview_placeholder em
+{
+    font-style: normal;
+}
+
+.cursor
+{
+    display: inline-block;
+    font-weight: 300;
+    color: #0085ff;
+    opacity: 1;
+    animation: cursor 1.2s ease infinite;
+}
+
+@keyframes cursor
+{
+    0%{opacity:0}
+    50%{opacity:0}
+    70%{opacity:1}
+    100%{opacity:1}
+}
+
+#user_input
+{
+    display:none;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.7px;
+}
